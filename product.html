@@ -1,0 +1,46 @@
+---
+layout: post
+title: Product
+permalink: /product/
+---
+
+    <!-- pricing
+    ================================================== -->
+    <section id="pricing">
+        <div class="row pricing-content">
+            <div class=" pricing-table">
+                <div class="row">
+                    <div class="col-four pricing-intro">
+                <h1 class="intro-header" data-aos="fade-up">สินค้า OTOP <br>นวัตวิถี นาเกลือ</h1>
+
+                <!-- <p data-aos="fade-up">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. 
+                </p> -->
+            </div>
+                            {% for product in site.data.product %}
+
+                    <div class="col-four plan-wrap">
+                        <div class="plan-block primary" data-aos="fade-up">
+                            <div class="plan-top-part">
+                                <img src="http://placehold.it/300x300">
+                                <hp class="plan-block-title">{{product.name}}</p>
+                                <!-- <p class="plan-block-price"><sup>$</sup>50</p> -->
+                                <p class="plan-block-per">{{product.cat}}</p>
+                            </div>
+                            <div class="plan-bottom-part">
+                                <ul class="plan-block-features">
+                                    <li><span>{{product.contact}}</span>  {{product.owner}}</li>
+                                </ul>
+
+                                <!-- <a class="button button-primary large" href="">See all</a> -->
+                            </div>
+
+                        </div>
+                    </div> <!-- end plan-wrap -->
+                            {% endfor %}
+
+                </div>               
+            </div> <!-- end pricing-table -->
+
+        </div> <!-- end pricing-content -->
+    </section> <!-- end pricing -->
+

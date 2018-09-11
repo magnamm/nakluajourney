@@ -1,0 +1,53 @@
+---
+layout: post
+title: Contact
+permalink: /contact/
+---
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about">
+    <section id="contact">
+
+        <div class="row about-intro">
+
+            <div class="col-four">
+                <h1 class="intro-header" data-aos="fade-up">ติดต่อเรา</h1>
+                <p class="lead" data-aos="fade-up">
+                    <h3>ส่งข้อความหาเรา</h3>
+
+                <form>
+                    <div>
+                        <label for="sampleInput">Your email</label>
+                        <input class="full-width" type="email" placeholder="test@mailbox.com" id="sampleInput">
+                    </div>
+                   
+                    <label for="exampleMessage">Message</label>
+                    <textarea class="full-width" placeholder="Your message" id="exampleMessage"></textarea>
+
+                    <label class="add-bottom">
+                        <input type="checkbox">                     
+                        <span class="label-text">Send a copy to yourself</span>
+                    </label>
+                   
+                    <input class="button-primary" type="submit" value="Submit">
+
+                </form>  
+                </p>
+                
+            </div>
+            <div class="col-eight">
+            	{% for staff in site.data.staff %}
+                <div class="row">
+                    <img src="{{staff.num}}" style="border-radius: 50%; width: 150px; height: 150px;">
+                    <h3>{{staff.name}}</h3><h5>{{staff.title}}</h5>
+                    <p>เบอร์โทร. {{staff.phone}} <br>{{staff.email}}</p>
+                </div>
+                {% endfor %}
+                
+            </div>                       
+            
+        </div>
+    </section>
+    </section> <!-- end about -->  
