@@ -42,4 +42,5 @@ plugins:
 exclude: [node_modules, gulpfile.js]
 
 sass:
-  style: nested # possible values: nested expanded compact compressed
+  sass_dir: _sass
+  style: compressed # possible values: nested expanded compact compressed

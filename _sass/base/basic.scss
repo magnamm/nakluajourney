@@ -1,34 +1,35 @@
+
 /* ===================================================================
  *  02. basic/base setup styles - (_basic.scss)
  *
  * ------------------------------------------------------------------- */
 
-html 
+html {
   font-size: 62.5%;
   box-sizing: border-box;
-
+}
 
 *,
 *::before,
-*::after 
+*::after {
   box-sizing: inherit;
+}
 
-
-body 
+body {
   font-weight: normal;
   line-height: 1;
   text-rendering: optimizeLegibility;
   word-wrap: break-word;
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: none;
-
+}
 
 body,
 input,
-button 
+button {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-
+}
 
 
 /* ------------------------------------------------------------------- 
@@ -36,77 +37,77 @@ button
  * ------------------------------------------------------------------- */
 
 img,
-video 
+video {
   max-width: 100%;
   height: auto;
-
+}
 
 
 /* ------------------------------------------------------------------- 
  * Typography resets - (_basic.scss)
  * ------------------------------------------------------------------- */
 
-div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td 
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
   margin: 0;
   padding: 0;
+}
 
-
-h1, h2, h3, h4, h5, h6 
+h1, h2, h3, h4, h5, h6 {
   -webkit-font-variant-ligatures: common-ligatures;
   -moz-font-variant-ligatures: common-ligatures;
   font-variant-ligatures: common-ligatures;
   text-rendering: optimizeLegibility;
-
+}
 
 em,
-i 
+i {
   font-style: italic;
   line-height: inherit;
-
+}
 
 strong,
-b 
+b {
   font-weight: bold;
   line-height: inherit;
+}
 
-
-small 
+small {
   font-size: 60%;
   line-height: inherit;
-
+}
 
 ol,
-ul 
+ul {
   list-style: none;
+}
 
-
-li 
+li {
   display: block;
-
+}
 
 
 /* ------------------------------------------------------------------- 
  * links - (_basic.scss)
  * ------------------------------------------------------------------- */
 
-a 
+a {
   text-decoration: none;
   line-height: inherit;
+}
 
-
-a img 
+a img {
   border: none;
-
+}
 
 
 /* ------------------------------------------------------------------- 
  * inputs - (_basic.scss)
  * ------------------------------------------------------------------- */
 
-fieldset 
+fieldset {
   margin: 0;
   padding: 0;
-
+}
 
 input[type="email"],
 input[type="number"],
@@ -115,10 +116,10 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
-textarea 
+textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-
+}
