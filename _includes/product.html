@@ -10,54 +10,58 @@
                 <!-- <p data-aos="fade-up">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. 
                 </p> -->
             </div>
+            {% for product in site.data.product %}
+            <div class="col-four pricing-table plan-wrap">
+                <div class="container">
+                    <img src="http://placehold.it/300x300" class="image">
+                    <div class="overlay">
+                        <p class="text">{{product.name}}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+<style type="text/css">
+    .container {
+      position: relative;
+      width: 100%;
+    }
 
-            <div class="col-eight pricing-table">
-                <div class="row">
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
 
-                    <div class="col-six plan-wrap">
-                        <div class="plan-block" data-aos="fade-up"> 
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #008CBA;
+    }
 
-                            <div class="plan-top-part">
-                                <img src="http://placehold.it/300x300">
-                                <h3 class="plan-block-title">ห่อหมกปลาทะเลสูตรโบราณ</h3>
-                                <!-- <p class="plan-block-price"><sup>$</sup>25</p> -->
-                                <p class="plan-block-per">OTOP อาหาร</p>
-                            </div>
+    .container:hover .overlay {
+      opacity: 1;
+    }
 
-                            <div class="plan-bottom-part">
-                                <ul class="plan-block-features">
-                                    <li><span>081-809-0968</span>  พี่แอนนี่</li>
-                                </ul>
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+</style>
 
-                                <a class="button button-primary large" href="">See all</a>
-                            </div>  
-                     
-                        </div>
-                    </div> <!-- end plan-wrap -->
-
-                    <div class="col-six plan-wrap">
-                        <div class="plan-block primary" data-aos="fade-up">
-
-                            <div class="plan-top-part">
-                                <img src="http://placehold.it/300x300">
-                                <h3 class="plan-block-title">เจ้กานดา กรอบเค็ม</h3>
-                                <!-- <p class="plan-block-price"><sup>$</sup>50</p> -->
-                                <p class="plan-block-per">OTOP ขนม/</p>
-                            </div>
-
-                            <div class="plan-bottom-part">
-                                <ul class="plan-block-features">
-                                    <li><span>089-834-7257</span>  เจ้กานดา</li>
-                                </ul>
-
-                                <a class="button button-primary large" href="">See all</a>
-                            </div>
-
-                        </div>
-                    </div> <!-- end plan-wrap -->
-
-                </div>               
-            </div> <!-- end pricing-table -->
 
         </div> <!-- end pricing-content -->
     </section> <!-- end pricing -->

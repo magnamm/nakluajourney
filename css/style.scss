@@ -1,5 +1,21 @@
 ---
 ---
+
+
+@import 'fonts/prompt';
+// font
+$th-font: 'prompt';
+//color
+$primary-color: #619FCE;
+$secondary-color: #9DCCD2;
+$primary-alt-color: #974E0A;
+$secondary-alt-color: #A17C50;
+$light-bg-color: #FCF6E8;
+$dark-bg-color: #5AC9E7;
+$black: #151515;
+$gray: #727272;
+$white: #efefef;
+
 @import 'base/reset';
 @import 'base/basic';
 @import 'base/grid';
@@ -8,6 +24,6 @@
 @import 'vendor/owl';
 @import 'vendor/lity';
 
-@import 'fonts/prompt';
 
-@import 'style/main'
+@import 'style/main';
+

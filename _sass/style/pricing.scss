@@ -101,12 +101,12 @@
 }
 
 .pricing-table .plan-block .plan-block-features li span {
-  color: #0066ff;
+  color: $primary-color;
   font-family: 'prompt', sans-serif;
 }
 
 .pricing-table .plan-block.primary {
-  background: #0066ff;
+  background: $primary-color;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -135,7 +135,7 @@
 
 .pricing-table .plan-block.primary .button.button-primary:hover,
 .pricing-table .plan-block.primary .button.button-primary:focus {
-  color: #39b54a;
+  color: $primary-color;
 }
 
 .pricing-table .plan-bottom-part {

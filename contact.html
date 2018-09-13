@@ -19,35 +19,39 @@ permalink: /contact/
 
                 <form>
                     <div>
-                        <label for="sampleInput">Your email</label>
+                        <label for="sampleInput">email ของคุณ</label>
                         <input class="full-width" type="email" placeholder="test@mailbox.com" id="sampleInput">
                     </div>
-                   
-                    <label for="exampleMessage">Message</label>
-                    <textarea class="full-width" placeholder="Your message" id="exampleMessage"></textarea>
 
+                    <label for="exampleMessage">ช้อความ</label>
+                    <textarea class="full-width" placeholder="เขียนข้อความถึงเรา" id="exampleMessage"></textarea>
+
+                    <!--
                     <label class="add-bottom">
-                        <input type="checkbox">                     
+                        <input type="checkbox">
                         <span class="label-text">Send a copy to yourself</span>
-                    </label>
-                   
-                    <input class="button-primary" type="submit" value="Submit">
+                    </label> -->
 
-                </form>  
+                    <input class="button-primary" type="submit" value="ส่งข้อความ">
+
+                </form>
                 </p>
-                
             </div>
             <div class="col-eight">
-            	{% for staff in site.data.staff %}
-                <div class="row">
+            	<div class="row">
+                    <h1>คณะทำงาน บ้านนาเกลือ</h1>
+                {% for staff in site.data.staff %}
+                <div class="col-four" style="min-height: 400px">
                     <img src="{{staff.num}}" style="border-radius: 50%; width: 150px; height: 150px;">
-                    <h3>{{staff.name}}</h3><h5>{{staff.title}}</h5>
-                    <p>เบอร์โทร. {{staff.phone}} <br>{{staff.email}}</p>
+                    <h3>{{staff.name}}</h3>
+                    <h5>{{staff.title}}</h5>
+                    <p><a href="tel:{{staff.phone}}">โทร. {{staff.phone}}</a> <br><a href="mailto:{{staff.email}}">{{staff.email}}</a></p>
                 </div>
                 {% endfor %}
-                
-            </div>                       
-            
+                </div>
+
+            </div>
+
         </div>
     </section>
     </section> <!-- end about -->  

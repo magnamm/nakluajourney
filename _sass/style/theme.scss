@@ -32,7 +32,7 @@ h1.intro-header {
   font-family: 'prompt', sans-serif;
   font-size: 3.4rem;
   line-height: 1.324;
-  color: #151515;
+  color: $black;
   position: relative;
   padding-bottom: 3.6rem;
 }
@@ -42,7 +42,7 @@ h1.intro-header::before {
   content: "";
   height: 2px;
   width: 70px;
-  background-color: #39b54a;
+  background-color: $primary-color;
   position: absolute;
   left: 0;
   bottom: 0;

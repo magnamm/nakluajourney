@@ -18,20 +18,22 @@ permalink: /product/
             </div>
                             {% for product in site.data.product %}
 
-                    <div class="col-four plan-wrap">
+                    <div class="col-six plan-wrap" style="min-height: 850px">
                         <div class="plan-block primary" data-aos="fade-up">
                             <div class="plan-top-part">
-                                <img src="http://placehold.it/300x300">
-                                <hp class="plan-block-title">{{product.name}}</p>
+                                <img src="{{product.img}}" style="width: 50%; text-align: center; display: inline-block;"><br>
+                                <hp class="plan-block-title">{{product.title}}</p>
                                 <!-- <p class="plan-block-price"><sup>$</sup>50</p> -->
-                                <p class="plan-block-per">{{product.cat}}</p>
+                                <p class="plan-block-per">{{product.discription}}</p>
                             </div>
                             <div class="plan-bottom-part">
                                 <ul class="plan-block-features">
-                                    <li><span>{{product.contact}}</span>  {{product.owner}}</li>
+                                    <li><span>{{product.contact}}</span>  </li>
+                                    <li><span>{{product.url}}</span>  </li>
+                                    <li>{{product.owner}}</li>
                                 </ul>
 
-                                <!-- <a class="button button-primary large" href="">See all</a> -->
+                                <a class="button button-primary large" href="">{{product.location}}</a>
                             </div>
 
                         </div>

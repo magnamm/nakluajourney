@@ -1,80 +1,110 @@
+
 - product:
   name: ห่อหมกปลาทะเลสูตรโบราณ
-  discription:
-  img:
+  title: ร้านห่อหมกผู้ใหญ่ณะ @บ้านนาเกลือ
+  discription: ห่อหมกทะเลสูตรโบราณ ขายมาสามรุ่นอายุ ห่อละ 25 บาท
+  img: "../images/product/product1.png"
   url:
-  contact: 081-809-0968 
-  owner: พี่แอนนี่
+  contact: 081-809-0968
+  owner: คุณอรุณี
   cat: OTOP อาหาร
+  location: ตลาดเก่านาเกลือ
+
 - product:
   name: เจ้กานดา กรอบเค็ม
-  discription:
-  img:
+  title: เจ้กานดา กรอบเค็ม
+  discription: ขนมกรอบเค็ม ราคากล่องละ 35 บาท (180 กรัม) พิเศษซื้อ 3 กล่อง 100 บาท
+  img: "../images/product/product2.png"
   url:
   contact: 089-834-7257
   owner: เจ้กานดา
   cat: OTOP ขนม
+  location: บ้านนาเกลือ
+
 - product:
   name: แจงลอน
-  discription:
-  img:
+  title: แจงลอนกุ้ง
+  discription: แจงลอนกุ้ง ไม้ละ 10 บาท
+  img: "../images/product/product3.png"
   url:
-  contact: 093-9837176
-  owner: พี่สุนีย์
+  contact: 093-983-7176
+  owner: คุณวลีพร
   cat: OTOP อาหาร
+  location: ชุมชนตลาดเก่า ตรงข้ามออมสินนาเกลือ ข้างร้านก๊วยเตี๋ยวสองบัณฑิต
+
 - product:
   name: พริกย่าง
-  discription:
-  img:
+  title: พริกย่างทรงเครื่อง ไส้หมู-ไส้ไก่
+  discription: พริกย่างทรงเครื่อง ไส้หมู-ไส้ไก่  กล่องละ 50 บาท (พริก 4 เม็ด), 100 บาท (พริก 8 เม็ด)
+  img: "../images/product/product4.png"
   url:
-  contact: 062-6155983 
-  owner: พี่คมกริฤธิ์
+  contact: 062-615-5983
+  owner: คุณโจ๊ก
   cat: OTOP อาหาร
+  location: ปากซอย 9 นาเกลือ ตรงข้ามร้านนำชัยอิเล็กโทรนิค 2 (สหพันธ์)
+
 - product:
   name: น้ำปลาหวาน
-  discription:
-  img:
+  title: น้ำปลาหวาน แจ๋วแหวว
+  discription: น้ำปลาหวานเครื่องแน่น ราคากระปุกละ 100 บาท (380 กรัม)
+  img: "../images/product/product5.png"
   url:
   contact: 090-463-4565
   owner: พี่ธิดาวรรณ์
   cat: OTOP ของว่าง
+  location: บ้านนาเกลือ
+
 - product:
   name: ทอดมันปู
-  discription:
-  img:
+  title: เจ้เอื้อง ปูม้าต้ม ปูม้าแกะ ทอดมันปู
+  discription: ทอดมันปู จากปลาอินทรีย์แท้ไม่ผสมแป้ง ถุงละ 100 บาท (3 ขีด) , ปูม้าต้ม-ปูม้าแกะ
+  img: "../images/product/product6.png"
   url:
-  contact: 081-779-4943 
+  contact: 081-779-4943
   owner: พี่เอื้อง
   cat: OTOP อาหาร
+  location: หลังตลาดนาเกลือ
+
 - product:
   name: ขนมเปียกปูนใบเตย
-  discription:
-  img:
+  title: ร้านเขมาภิรักษ์ มรดกไทย
+  discription: ขนมเปียกปูนใบเตยและวุ้นใบเตย จำหน่ายเป็นถุง ถุงละ 15 บาท และมีแบบถาด เปียกปูนใบเตย ถาดละ 250 บาท  วุ้นใบเตยถาดละ 300 บาท
+  img: "../images/product/product7.png"
   url:
-  contact: 087-783-6673 
+  contact: 087-783-6673
   owner: ร้านเขมาภิรักษ์
   cat: OTOP ขนม
+  location: หน้าตลาดเก่านาเกลือ
+
 - product:
   name: ข้าวเหนียวมะม่วง
-  discription:
-  img:
+  title: ข้าวเหนียวมะม่วง คุณติ๋ว ลานโพธิ์
+  discription: ข้าวเหนียวมูล กิโลกรัมละ 160 บาท มะม่วงสุกมี 3 ราคา - 100, 120, 150 บาทต่อ 1 กิโลกรัม แล้วแต่ฤดูกาล
+  img: "../images/product/product8.png"
   url:
-  contact: 081-8024112 
-  owner: พี่จริยา
+  contact: 081-8024112
+  owner: คุณจริยา
   cat: OTOP ขนม
+  location: หัวมุมหน้าตลาดลานโพธิ์
+
 - product:
   name: ลูกชิ้นปลาป้าบล
-  discription:
-  img:
-  url:
-  contact: 094-875-8926 , 064-7756311
-  owner: เจ้นิจ
+  title: ลูกชิ้นปลาอินทรีย์ป้าบล
+  discription: ลูกชิ้นปลาอินทรีย์แท้เจ้าเก่าดั้งเดิม ราคา ไม้ละ 10 บาท (มีลูกชิ้นปลาสดจำหน่ายแบบส่ง)
+  img: "../images/product/product9.png"
+  url: 064-7756311
+  contact: 094-875-8926
+  owner: คุณนิจ
   cat: OTOP อาหาร
+  location: หน้าตลาดเก่านาเกลือ ข้าง7-11
+
 - product:
   name: ขนมจีนน้ำพริก
-  discription:
-  img:
+  title: พี่นงเยาว์ ขนมจีนน้ำพริกน้ำยาปู
+  discription: ขนมจีนน้ำพริกน้ำยาปู ชามละ 40 บาท, น้ำพริกลงเรือกล่องละ 40 บาท
+  img: "../images/product/product10.png"
   url:
   contact: 095-175-3295
-  owner: ป้านงเยาว์
+  owner: คุณนงเยาว์
   cat: OTOP อาหาร
+  location: บ้านนาเกลือ

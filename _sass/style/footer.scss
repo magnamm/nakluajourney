@@ -34,12 +34,12 @@ footer {
   font-size: 1.5rem;
   line-height: 2.7rem;
   color: rgba(255, 255, 255, 0.25);
-  background-color: #0066ff;
+  background-color: $primary-color;
 }
 
 footer a,
 footer a:visited {
-  color: #39b54a;
+  color: $primary-alt-color;
 }
 
 footer a:hover,
@@ -145,8 +145,8 @@ footer ul a:visited {
   top: 0;
   right: 0;
   color: #ffffff;
-  background: #39b54a;
-  border-color: #39b54a;
+  background: $primary-color;
+  border-color: $primary-color;
   border-radius: 0 .5rem .5rem 0;
   padding: 0 15px;
 }
@@ -187,7 +187,7 @@ footer ul a:visited {
 .footer-bottom {
   margin-top: 6.6rem;
   text-align: center;
-  background-color: #0066ff;
+  background-color: $primary-color;
 }
 
 .footer-bottom .copyright span {

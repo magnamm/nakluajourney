@@ -73,8 +73,8 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  background-color: #0066ff;
-  border-color: #0066ff;
+  background-color: $primary-color;
+  border-color: $primary-color;
   color: #FFFFFF;
 }
 
@@ -88,8 +88,8 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  background: #0099ff;
-  border-color: #0099ff;
+  background: $primary-color;
+  border-color: $primary-color;
 }
 
 button.full-width,
@@ -118,8 +118,8 @@ button.stroke,
 
 button.stroke:hover,
 .button.stroke:hover {
-  border: 0.3rem solid #39b54a;
-  color: #39b54a;
+  border: 0.3rem solid $primary-color;
+  color: $primary-color;
 }
 
 button.pill,
