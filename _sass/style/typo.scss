@@ -30,7 +30,7 @@
  * ------------------------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
-  font-family: $th-font, sans-serif;
+  font-family: 'prompt', sans-serif;
   color: $black;
   font-style: normal;
   text-rendering: optimizeLegibility;
@@ -87,7 +87,7 @@ p img {
 }
 
 p.lead {
-  font-family: $th-font, sans-serif;
+  font-family: 'prompt', sans-serif;
   font-size: 2.1rem;
   line-height: 1.857;
   color: $gray;
@@ -107,10 +107,10 @@ em, i, strong, b {
   font-weight: normal;
 }
 em, i {
-  font-family: $th-font, sans-serif;
+  font-family: 'prompt', sans-serif;
 }
 strong, b {
-  font-family: $th-font, sans-serif;
+  font-family: 'prompt', sans-serif;
 }
 
 small {
@@ -137,7 +137,7 @@ blockquote:before {
 }
 
 blockquote p {
-  font-family: $th-font, sans-serif;
+  font-family: 'prompt', sans-serif;
   padding: 0;
   font-size: 1.9rem;
   line-height: 1.895;
@@ -161,7 +161,7 @@ blockquote cite a:visited {
 }
 
 abbr {
-  font-family: $th-font, sans-serif;
+  font-family: 'prompt', sans-serif;
   font-variant: small-caps;
   text-transform: lowercase;
   letter-spacing: .05rem;
@@ -371,7 +371,7 @@ table {
   border-width: 0;
   width: 100%;
   max-width: 100%;
-  font-family: $th-font, sans-serif;
+  font-family: 'prompt', sans-serif;
 }
 
 th,
@@ -383,7 +383,7 @@ td {
 
 th {
   color: $black;
-  font-family: $th-font, sans-serif;
+  font-family: 'prompt', sans-serif;
 }
 
 td {
