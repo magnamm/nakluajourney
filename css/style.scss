@@ -1,11 +1,8 @@
 ---
 ---
 
-
 @import 'fonts/prompt';
-// font
 $th-font: 'prompt';
-//color
 $primary-color: #619FCE;
 $secondary-color: #9DCCD2;
 $primary-alt-color: #974E0A;
@@ -20,7 +17,7 @@ $white: #efefef;
 @import 'base/basic';
 @import 'base/grid';
 
-// @import 'vendor/aos';
+@import 'vendor/aos';
 @import 'vendor/owl';
 @import 'vendor/lity';
 
