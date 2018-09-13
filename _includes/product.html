@@ -4,16 +4,16 @@
     <section id="pricing">
         <div class="row pricing-content">
 
-            <div class="col-four pricing-intro">
-                <h1 class="intro-header" data-aos="fade-up">สินค้า OTOP <br>นวัตวิถี นาเกลือ</h1>
+            <div class="col-two pricing-intro">
+                <h1 class="intro-header" data-aos="fade-up">สินค้า OTOP <br>นวัตวิถี <br>นาเกลือ</h1>
 
                 <!-- <p data-aos="fade-up">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. 
                 </p> -->
             </div>
             {% for product in site.data.product %}
-            <div class="col-four pricing-table plan-wrap">
+            <div class="col-two pricing-table plan-wrap">
                 <div class="container">
-                    <img src="http://placehold.it/300x300" class="image">
+                    <img src="{{product.img}}" class="image">
                     <div class="overlay">
                         <p class="text">{{product.name}}</p>
                     </div>

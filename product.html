@@ -8,39 +8,91 @@ permalink: /product/
     ================================================== -->
     <section id="pricing">
         <div class="row pricing-content">
-            <div class=" pricing-table">
-                <div class="row">
-                    <div class="col-four pricing-intro">
-                <h1 class="intro-header" data-aos="fade-up">สินค้า OTOP <br>นวัตวิถี นาเกลือ</h1>
+
+            <div class="col-two pricing-intro">
+                <h1 class="intro-header" data-aos="fade-up">สินค้า OTOP <br>นวัตวิถี <br>นาเกลือ</h1>
 
                 <!-- <p data-aos="fade-up">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. 
                 </p> -->
             </div>
-                            {% for product in site.data.product %}
+            {% for product in site.data.product %}
+            <div class="col-two pricing-table plan-wrap">
+                <div class="container">
+                    <a href="#{{product.id}}" class="smoothscroll"><img src="{{product.img}}" class="image"></a>
+                    <div class="overlay">
+                        <a href="#{{product.id}}"><p class="text">{{product.name}}</p></a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+<style type="text/css">
+    .container {
+      position: relative;
+      width: 100%;
+    }
 
-                    <div class="col-six plan-wrap" style="min-height: 850px">
-                        <div class="plan-block primary" data-aos="fade-up">
-                            <div class="plan-top-part">
-                                <img src="{{product.img}}" style="width: 50%; text-align: center; display: inline-block;"><br>
-                                <hp class="plan-block-title">{{product.title}}</p>
-                                <!-- <p class="plan-block-price"><sup>$</sup>50</p> -->
-                                <p class="plan-block-per">{{product.discription}}</p>
-                            </div>
-                            <div class="plan-bottom-part">
-                                <ul class="plan-block-features">
-                                    <li><span>{{product.contact}}</span>  </li>
-                                    <li><span>{{product.url}}</span>  </li>
-                                    <li>{{product.owner}}</li>
-                                </ul>
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
 
-                                <a class="button button-primary large" href="">{{product.location}}</a>
-                            </div>
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #008CBA;
+    }
 
-                        </div>
-                    </div> <!-- end plan-wrap -->
-                            {% endfor %}
+    .container:hover .overlay {
+      opacity: 1;
+    }
 
-                </div>               
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+</style>
+
+
+        </div> <!-- end pricing-content -->
+    </section> <!-- end pricing -->
+
+
+    <section id="pricing">
+        <div class="row pricing-content">
+            <div class=" pricing-table">
+                {% for product in site.data.product %}
+                <div class="row">
+                    <div class="col-five">
+                        <img src="{{product.img}}" style="width: 50%; text-align: center; display: inline-block;"><br>
+                    </div>
+                    <div class="col-seven" style="text-align: left;">
+                        <h2 id="{{product.id}}">{{product.title}}</h2>
+                        <p>{{product.discription}}</p>
+                        <p><ul style="list-style: none; list-style-image: none;">
+                            <li>{{product.location}}</li>
+                            <li><span>{{product.contact}}</span>  </li>
+                            <li><span>{{product.url}}</span>  </li>
+                            <li>{{product.owner}}</li>
+                        </ul></p>
+                    </div>
+                    <hr>
+                </div>
+                {% endfor %}
             </div> <!-- end pricing-table -->
 
         </div> <!-- end pricing-content -->
