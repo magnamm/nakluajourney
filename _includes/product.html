@@ -13,10 +13,11 @@
             {% for product in site.data.product %}
             <div class="col-two pricing-table plan-wrap">
                 <div class="container">
+                    <a href="/product/#{{product.id}}">
                     <img src="{{product.img}}" class="image">
                     <div class="overlay">
                         <p class="text">{{product.name}}</p>
-                    </div>
+                    </div></a>
                 </div>
             </div>
             {% endfor %}
@@ -62,7 +63,7 @@
     }
 </style>
 
-
+          <blockquote style="float: right; clear: both;">อ่านต่อ <i class="mi mi-ResizeTouchNarrowerMirrored"></i></blockquote>
         </div> <!-- end pricing-content -->
     </section> <!-- end pricing -->
 

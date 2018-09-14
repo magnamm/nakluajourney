@@ -1,6 +1,7 @@
   <!-- home
    ================================================== -->
-   <section id="home" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000>
+   <section id="home" data-parallax="scroll" data-image-src="https://i1.ytimg.com/vi/0bnOyOiHCK8/maxresdefault.jpg
+" data-natural-width=3000 data-natural-height=2000>
 <!-- <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
     <iframe src="https://www.youtube.com/embed/0bnOyOiHCK8?controls=0&showinfo=0&rel=0&autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
 </div>
@@ -64,12 +65,14 @@
         randomVid = Math.floor(Math.random() * vid.length),
         currVid = randomVid;
 
+    var sw = screen.width;
+    var    sh = screen.height;
     // $('.hi em:last-of-type').html(vid.length);
 
     function onYouTubePlayerAPIReady(){
       tv = new YT.Player('tv', {
-            height: '100%',
-            width: '100%',
+            height: sh,
+            width: sw,
             events: {'onReady': onPlayerReady, 'onStateChange': onPlayerStateChange}, playerVars: playerDefaults});
     }
 
