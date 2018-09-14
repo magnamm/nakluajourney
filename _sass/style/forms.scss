@@ -47,7 +47,7 @@ select {
   border: 0;
   outline: none;
   color: #333333;
-  font-family: 'prompt', sans-serif;
+  font-family: $font, sans-serif;
   font-size: 1.5rem;
   line-height: 3rem;
   max-width: 100%;
@@ -126,7 +126,7 @@ select:focus {
 
 label,
 legend {
-  font-family: 'prompt', sans-serif;
+  font-family: $font, sans-serif;
   font-size: 1.4rem;
   margin-bottom: .6rem;
   color: #151515;
@@ -141,7 +141,7 @@ input[type="radio"] {
 label>.label-text {
   display: inline-block;
   margin-left: 1rem;
-  font-family: 'prompt', sans-serif;
+  font-family: $font, sans-serif;
   line-height: inherit;
 }
 

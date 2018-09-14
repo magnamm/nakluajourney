@@ -95,7 +95,7 @@
 }
 
 .home-content-left h1 {
-  font-family: 'prompt', sans-serif;
+  font-family: $font, sans-serif;
   font-size: 5.2rem;
   letter-spacing: -.05rem;
   line-height: 1.269;
@@ -218,7 +218,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 .scroll-icon {
   display: inline-block;
-  font-family: 'prompt', sans-serif;
+  font-family: $font, sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .3rem;

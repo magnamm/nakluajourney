@@ -9,7 +9,9 @@ $dark-bg-color: #5AC9E7;
 $black: #151515;
 $gray: #727272;
 $white: #efefef;
+$font: 'THSarabunNew';
 
+@import 'sarabun/thsarabunnew';
 @import 'base/reset';
 @import 'base/basic';
 @import 'base/grid';

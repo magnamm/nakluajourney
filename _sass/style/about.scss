@@ -59,7 +59,7 @@
 }
 
 .about-features .feature h3 {
-  font-family: 'prompt', sans-serif;
+  font-family: $font, sans-serif;
   font-size: 1.9rem;
   color: #151515;
   margin-bottom: 3rem;
@@ -127,7 +127,7 @@
 
 .about-how-content .step::before {
   display: block;
-  font-family: 'prompt';
+  font-family: $font;
   font-size: 2rem;
   content: attr(data-item);
   color: #ffffff;
