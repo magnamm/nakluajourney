@@ -1,16 +1,59 @@
   <!-- home
    ================================================== -->
-   <section id="home" data-parallax="scroll" data-image-src="https://i1.ytimg.com/vi/0bnOyOiHCK8/maxresdefault.jpg
-" data-natural-width=3000 data-natural-height=2000>
+   <!-- <section id="home" data-parallax="scroll" data-image-src="https://i1.ytimg.com/vi/0bnOyOiHCK8/maxresdefault.jpg" data-natural-width=3000 data-natural-height=2000> -->
+    <section id="home">
 <!-- <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
     <iframe src="https://www.youtube.com/embed/0bnOyOiHCK8?controls=0&showinfo=0&rel=0&autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
 </div>
  -->
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <script src="/js/jquery.youtubebackground.js"></script>
+
+<div class="_pattern-overlay"></div>
+ <div id="video"></div>
+ <script type="text/javascript">
+    $('#video').YTPlayer({
+    fitToBackground: true,
+    videoId: '0bnOyOiHCK8',
+    autoplay: 1,
+    controls: 1,
+    showinfo: 0,
+    wmode: 'transparent',
+    branding: 0,
+    rel: 0,
+    autohide: 0,
+    origin: window.location.origin
+});
+ </script>
+
+ <style type="text/css">
+    #video{
+        position: relative;
+        background: #000;
+    }
+
+    .ytplayer-container{
+        background: url("https://i1.ytimg.com/vi/0bnOyOiHCK8/maxresdefault.jpg");
+        filter: brightness(50%) sepia(75%);
+        position: absolute;
+        top: -100;
+        z-index: -99;
+    }
+    ._pattern-overlay { 
+        position: absolute;
+        top: 0;
+        width: 100%;
+        opacity: 0.3;
+        bottom: 0;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAAXNSR0IArs4c6QAAAA9JREFUCB1jYKAq+I/TNAAaTwEA7cqgAQAAAABJRU5ErkJggg==) repeat;/*
+        background-image: url(https://cdnjs.cloudflare.com/ajax/libs/vegas/2.3.1/overlays/03.png);*/
+        z-index: -1;
+    }
+ </style>
+ <!-- 
 <div class="tv">
       <div class="screen mute" id="tv"></div>
-</div>
-<!-- <div class="cover">
-  <div class="hi">This is fully responsive & mobile friendly YouTube video background scaled with 16/9 aspect ratio. Actually bunch of videos - js loads randomly 1 of 4 with different start/end times, then it loops through all the vids.<br><br> Click <span>here</span> to <em>un</em>mute & <span>here</span> to see another vid (<em>0</em> of <em>0</em>). Check all of them! They're quite awesome. ;]</div>
 </div> -->
 
 

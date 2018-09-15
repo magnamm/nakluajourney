@@ -17,14 +17,16 @@ permalink: /contact/
                 <p class="lead" data-aos="fade-up">
                     <h3>ส่งข้อความหาเรา</h3>
 
-                <form>
+                <form name="contact" netlify>
                     <div>
+                        <label for="sampleInput">ชื่อ</label>
+                        <input class="full-width" type="email" placeholder="test@mailbox.com" id="sampleInput" name="name">
                         <label for="sampleInput">email ของคุณ</label>
-                        <input class="full-width" type="email" placeholder="test@mailbox.com" id="sampleInput">
+                        <input class="full-width" type="email" placeholder="test@mailbox.com" id="sampleInput" name="email">
                     </div>
 
                     <label for="exampleMessage">ช้อความ</label>
-                    <textarea class="full-width" placeholder="เขียนข้อความถึงเรา" id="exampleMessage"></textarea>
+                    <textarea class="full-width" placeholder="เขียนข้อความถึงเรา" id="exampleMessage" name="massage"></textarea>
 
                     <!--
                     <label class="add-bottom">
@@ -38,10 +40,18 @@ permalink: /contact/
                 </p>
             </div>
             <div class="col-eight">
+
+            <div class="row">
+                <ul class="footer-social-list" style="text-align: center;">
+                    <li>
+                    <a href="ttps://www.facebook.com/Naklua.Pattaya/"><i class="fa fa-facebook-square fa-3x"></i> Facebook บ้านนาเกลือ</a>
+                </ul>
+
+            </div> <!-- /row -->
             	<div class="row">
                     <h1>คณะทำงาน บ้านนาเกลือ</h1>
                 {% for staff in site.data.staff %}
-                <div class="col-four" style="min-height: 400px">
+                <div class="col-four" style="min-height: 400px" data-aos="fade-up">
                     <img src="{{staff.num}}" style="border-radius: 50%; width: 150px; height: 150px;">
                     <h3>{{staff.name}}</h3>
                     <h5>{{staff.title}}</h5>
