@@ -20,7 +20,8 @@ permalink: /product/
                 <div class="container">
                     <a href="#{{product.id}}" class="smoothscroll"><img src="{{product.img}}" class="image"></a>
                     <div class="overlay">
-                        <a href="#{{product.id}}"><p class="text">{{product.name}}</p></a>
+                        <a href="#{{product.id}}"><p class="text">{{product.name}}<br>
+                        {{product.contact}}</p></a>
                     </div>
                 </div>
             </div>
@@ -29,6 +30,7 @@ permalink: /product/
     .container {
       position: relative;
       width: 100%;
+      
     }
 
     .image {
@@ -43,6 +45,8 @@ permalink: /product/
       bottom: 0;
       left: 0;
       right: 0;
+      margin: 0%;
+      padding: 0%;
       height: 100%;
       width: 100%;
       opacity: 0;
@@ -52,17 +56,20 @@ permalink: /product/
 
     .container:hover .overlay {
       opacity: 1;
+      margin: 0%;
+      padding: 0%;
     }
 
     .text {
       color: white;
-      font-size: 20px;
-      position: absolute;
+      font-size: 12pt;
+      /* position: absolute; */
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      padding-top: 10%;
+      /* -webkit-transform: translate(-50%, -50%); */
+      /* -ms-transform: translate(-50%, -50%); */
+      /* transform: translate(-50%, -50%); */
       text-align: center;
     }
 </style>
